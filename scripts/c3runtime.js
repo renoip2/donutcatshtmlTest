@@ -6306,7 +6306,6 @@ self.C3_ExpressionFuncs = [
 		() => -5,
 		() => 110,
 		() => "Create Animals",
-		() => "respawn",
 		() => 0.3,
 		() => 14,
 		() => 66,
