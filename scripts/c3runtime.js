@@ -5795,6 +5795,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.AddChild,
 		C3.Plugins.AJAX.Acts.Request,
 		C3.Plugins.System.Acts.SetGroupActive,
+		C3.Behaviors.Physics.Acts.SetSteppingMode,
 		C3.Behaviors.Physics.Acts.SetIterations,
 		C3.Plugins.Sprite.Acts.SetDefaultColor,
 		C3.Plugins.System.Cnds.CompareBoolVar,
