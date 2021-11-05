@@ -5796,6 +5796,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX.Acts.Request,
 		C3.Plugins.System.Acts.SetGroupActive,
 		C3.Behaviors.Physics.Acts.SetIterations,
+		C3.Plugins.Sprite.Acts.SetDefaultColor,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
@@ -5805,7 +5806,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.PlatformInfo.Cnds.IsOnChromeOS,
 		C3.Plugins.PlatformInfo.Cnds.IsOnMacOS,
 		C3.Plugins.PlatformInfo.Cnds.IsOnLinux,
-		C3.Plugins.Sprite.Acts.SetDefaultColor,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Cnds.PickByComparison,
@@ -6233,6 +6233,9 @@ self.C3_ExpressionFuncs = [
 		() => "GiftScreen",
 		() => "AnimalController",
 		() => 0.9,
+		() => 120,
+		() => "restart",
+		() => -59390808818687,
 		() => 360,
 		() => 640,
 		() => 0.5,
@@ -6327,6 +6330,7 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() * 10);
 		},
+		() => 1130,
 		() => 0.1001,
 		p => {
 			const n0 = p._GetNode(0);
@@ -6544,7 +6548,6 @@ self.C3_ExpressionFuncs = [
 			return () => (n0.ExpObject() - (n1.ExpObject() / 8));
 		},
 		() => "fullscreen",
-		() => 120,
 		() => 0.05,
 		() => "Powerups",
 		p => {
