@@ -5835,6 +5835,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetSize,
 		C3.Behaviors.Physics.Acts.SetEnabled,
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
+		C3.Behaviors.Physics.Acts.SetAngularVelocity,
 		C3.Plugins.Sprite.Cnds.CompareFrame,
 		C3.Plugins.Sprite.Exps.Height,
 		C3.Plugins.Sprite.Exps.Width,
@@ -6231,7 +6232,7 @@ self.C3_ExpressionFuncs = [
 		() => "VictoryScreen",
 		() => "GiftScreen",
 		() => "AnimalController",
-		() => 0.9,
+		() => 0.6,
 		() => 120,
 		() => "restart",
 		() => 1,
@@ -6270,6 +6271,7 @@ self.C3_ExpressionFuncs = [
 			return () => n0.ExpInstVar();
 		},
 		() => 0.7,
+		() => 0.9,
 		() => 2,
 		() => 10,
 		p => {
@@ -6286,7 +6288,6 @@ self.C3_ExpressionFuncs = [
 		() => 5,
 		() => 0.55,
 		() => 1.15,
-		() => 0.6,
 		() => 170,
 		() => 190,
 		() => 180,
@@ -6316,10 +6317,11 @@ self.C3_ExpressionFuncs = [
 		() => 66,
 		() => 0.4,
 		() => 0.101,
+		() => 150,
 		() => 1.5,
 		() => 650,
 		() => 674,
-		() => 1120,
+		() => 1130,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (Math.round((v0.GetValue() * 0.3)) * 10);
@@ -6328,6 +6330,7 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() * 10);
 		},
+		() => 1120,
 		() => 0.1001,
 		p => {
 			const n0 = p._GetNode(0);
