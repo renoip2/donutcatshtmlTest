@@ -5835,6 +5835,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetSize,
 		C3.Behaviors.Physics.Acts.SetEnabled,
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
+		C3.Behaviors.Physics.Acts.ApplyImpulse,
 		C3.Plugins.Sprite.Cnds.CompareFrame,
 		C3.Plugins.Sprite.Exps.Height,
 		C3.Plugins.Sprite.Exps.Width,
@@ -6230,8 +6231,7 @@ self.C3_ExpressionFuncs = [
 		() => "VictoryScreen",
 		() => "GiftScreen",
 		() => "AnimalController",
-		() => 1,
-		() => 0.25,
+		() => 0.9,
 		() => 360,
 		() => 640,
 		() => 0.5,
@@ -6248,6 +6248,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "BonusLevel",
 		() => 1010,
+		() => 1,
 		() => 0.012,
 		() => 0.013,
 		() => "bonus1",
@@ -6266,7 +6267,6 @@ self.C3_ExpressionFuncs = [
 			return () => n0.ExpInstVar();
 		},
 		() => 0.7,
-		() => 0.9,
 		() => 2,
 		() => 10,
 		p => {
@@ -6425,6 +6425,7 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => and(Math.round((n0.ExpBehavior("v") * 100)), "%");
 		},
+		() => 0.25,
 		() => "Новый пончик!",
 		() => 1.75,
 		() => "SkinGet",
