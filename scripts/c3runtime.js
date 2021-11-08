@@ -5749,11 +5749,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetAnimSpeed,
 		C3.Plugins.Text.Acts.SetZElevation,
 		C3.Plugins.Sprite.Acts.AddChild,
+		C3.Plugins.System.Acts.SetGroupActive,
+		C3.Behaviors.Physics.Acts.SetIterations,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.System.Exps.choose,
-		C3.Plugins.System.Acts.SetGroupActive,
 		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.PlatformInfo.Cnds.IsOnWindows,
 		C3.Plugins.PlatformInfo.Cnds.IsOnChromeOS,
@@ -6177,6 +6178,12 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
 		},
+		() => "SkinProgressScreen",
+		() => "VictoryScreen",
+		() => "GiftScreen",
+		() => "AnimalController",
+		() => 6.4,
+		() => 2.4,
 		() => 360,
 		() => 640,
 		() => 0.5,
@@ -6258,7 +6265,6 @@ self.C3_ExpressionFuncs = [
 		() => 0.3,
 		() => 14,
 		() => 66,
-		() => "AnimalController",
 		() => -1,
 		p => {
 			const n0 = p._GetNode(0);
@@ -6272,7 +6278,6 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 0.4,
 		() => 0.101,
-		() => "VictoryScreen",
 		() => 1.5,
 		() => 650,
 		() => 674,
@@ -6366,12 +6371,10 @@ self.C3_ExpressionFuncs = [
 			return () => (v0.GetValue() % 5);
 		},
 		() => 12,
-		() => "SkinProgressScreen",
 		() => 440,
 		() => 410,
 		() => 250,
 		() => "Готовность пончика",
-		() => 9,
 		() => 0.125,
 		() => "v",
 		p => {
@@ -6405,12 +6408,12 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() + 135);
 		},
+		() => 9,
 		() => "Level",
 		() => "levelId",
 		() => "Gold",
 		() => "getSkins",
 		() => "skinProgress",
-		() => "GiftScreen",
 		() => 645,
 		() => 0.12,
 		() => 540,
